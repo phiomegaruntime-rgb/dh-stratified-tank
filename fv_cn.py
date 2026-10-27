@@ -197,4 +197,3 @@ def _solve_tridiag(a: np.ndarray, b: np.ndarray, c: np.ndarray, d: np.ndarray) -
     for i in range(n-2, -1, -1):
         x[i] = (dc[i] - cc[i]*x[i+1]) / bc[i]
     return x
-
